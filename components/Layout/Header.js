@@ -19,8 +19,8 @@ const Header = () => {
 		const {pathname} = router;
 		if (pathname.includes("/soportetecnico")) {
 			setActiveLink("soportetecnico");
-		} else if (pathname.includes("/materiales")) {
-			setActiveLink("materiales");
+		} else if (pathname.includes("/eventospathbooks")) {
+			setActiveLink("eventospathbooks");
 		} else if (pathname.includes("/escuelas")) {
 			setActiveLink("escuelas");
 		} else if (pathname.includes("/login")) {
@@ -78,11 +78,11 @@ const Header = () => {
 								Soporte Técnico
 							</a>
 						</Link>
-						<Link href="/materiales">
+						<Link href="/eventospathbooks">
 							<a
-								onClick={() => setActiveLink("materiales")}
+								onClick={() => setActiveLink("eventospathbooks")}
 								className={`px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative ${
-									activeLink === "materiales"
+									activeLink === "eventospathbooks"
 										? "text-warning animation-active"
 										: "text-white-100 hover:text-warning"
 								}`}
@@ -148,12 +148,12 @@ const Header = () => {
 								Soporte Técnico
 							</a>
 						</Link>
-						<Link href="/materiales">
+						<Link href="/eventospathbooks">
 							<a
-								onClick={() => setActiveLink("materiales")}
+								onClick={() => setActiveLink("eventospathbooks")}
 								className={
 									"mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
-									(activeLink === "materiales"
+									(activeLink === "eventospathbooks"
 										? "bg-blue-100 border-azulpathbooks text-azulpathbooks"
 										: "border-transparent")
 								}
