@@ -90,13 +90,21 @@ const HomeSoporteTecnico = () => {
               </motion.p>
             </ScrollAnimationWrapper>
           </div>
-          <ScrollAnimationWrapper>
-            <motion.p className="leading-normal w-10/12 sm:w-10/12 lg:w-10/12 mx-auto my-2 text-center" variants={scrollAnimation}>
-              El equipo de soporte técnico está comprometido a brindarte ayuda exclusivamente en temas técnicos. No manejamos cuestiones comerciales ni precios de la plataforma o productos de Pathbooks. Puedes confiar en nosotros para ofrecerte un servicio excepcional y atención de calidad.
-            </motion.p>
-          </ScrollAnimationWrapper>
+
         </div>
       </div>
+      <iframe
+				id="contactar-soporte-b77kfi"
+				scrolling={"no"}
+				src="https://opnform.com/forms/contactar-soporte-b77kfi"
+				style={{
+					border: "none",
+					width: "100%",
+					overflowY: "hidden",
+					height: "660px",
+				}}
+			></iframe>
+			<script async onLoad="initEmbed('contactar-soporte-b77kfi')" src="https://opnform.com/widgets/iframe.min.js" type="text/javascript"></script>
     </div>
   );
 };
