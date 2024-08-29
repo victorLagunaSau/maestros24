@@ -12,7 +12,7 @@ export default function Home() {
 
 	const botonesOtrosGrados = [
 		{id: "izquierdo", text: "< Bachillerato 1", url: "/primaria1"},
-		{id: "centro", text: "Otros grados", url: "/"},
+		{id: "centro", text: "Otros gradosEs", url: "/"},
 		{id: "derecho", text: "Bachillerato 3 >", url: "/primaria3"},
 	];
 

@@ -36,7 +36,7 @@ const ModuloPlanLector = ({grado, imagen, botonesPlanLector}) => {
                                     nuestra comunidad gracias a los mensajes, aprendizajes y emociones que nos brindan
                                     los libros.
                                     <div>
-                                        <strong>Conoce más sobre el plan lector con nuestro video explicativo.</strong>
+                                        <strong>Conoce más sobre el plan lector:</strong>
                                         {/*<div>*/}
                                         {/*    <a*/}
                                         {/*        href={hrefVideo}*/}

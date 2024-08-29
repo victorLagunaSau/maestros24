@@ -46,11 +46,23 @@ const InicioGrados = ({grado}) => {
                             spy={true}
                             smooth={true}
                             duration={1000}
-                            className="btn btn-outline py-2 px-5 sm:px-8 border-yellow-500 text-yellow-100 bg-yellow-700 hover:bg-yellow-500 hover:text-yellow-700 transition-all hover:shadow-yellow-500"
+                            className="btn btn-outline py-2 px-5 sm:px-8 border-yellow-500 text-yellow-100 bg-yellow-700 hover:bg-yellow-500 hover:text-yellow-700 transition-all hover:shadow-yellow-500 m-1"
                             style={{minWidth: "200px"}}
                         >
                             Ver Lecturas
                         </LinkScroll>
+                                                <LinkScroll
+                            key="materialesgrado"
+                            to="materialesgrado"
+                            spy={true}
+                            smooth={true}
+                            duration={1000}
+                            className="btn btn-outline py-2 px-5 sm:px-8 border-yellow-500 text-yellow-100 bg-yellow-700 hover:bg-yellow-500 hover:text-yellow-700 transition-all hover:shadow-yellow-500 m-1"
+                            style={{minWidth: "200px"}}
+                        >
+                            Matriales
+                        </LinkScroll>
+
                     </div>
                 </motion.div>
             </ScrollAnimationWrapper>
