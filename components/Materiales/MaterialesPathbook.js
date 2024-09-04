@@ -6,11 +6,12 @@ const MaterialesPathbook = ({ pathbookId }) => {
     const { loading, error, data } = useQuery(materialesPathbook, {
         variables: { pathbook: pathbookId },
     });
-console.log(pathbookId)
+
+    console.log(pathbookId)
     console.log(data)
 
     if (loading) return <p>Loading...</p>;
-    if (error) return <p>{error}</p>;
+    if (error) return <p>Error: {error.message}</p>;
 
     // Si aún necesitas filtrar, puedes adaptar la condición aquí.
     const filteredResources = data.resources;
