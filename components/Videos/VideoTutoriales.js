@@ -8,7 +8,7 @@ const videoTutorialesData = [
     {
         title: "Como usar pathbooks",
         subtitle: "Capacitacion: Primera parte",
-        description: "En este video se cubren los aspectos iniciales de la capacitación, y se dan recomendaciones de lectura para todos los grados.",
+        description: "En este video se cubren los aspectos iniciales de la capacitación, y se dan recomendaciones de lectura para todos los gradosEs.",
         src: "https://www.youtube.com/embed/F7rR-4Khwks",
         thumbnail: "https://img.youtube.com/vi/F7rR-4Khwks/0.jpg",
     },

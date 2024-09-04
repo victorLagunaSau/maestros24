@@ -1,15 +1,19 @@
 import React, {useRef} from "react";
+import { useQuery } from "@apollo/client";
+import materialesPathbook from "../../graphql/materialespathbook";
 import ButtonMEI from "../MosaicoEducativo/ButtonMEI";
 import ButtonGrado from "../misc/ButtonGrado";
 import {ReactToPrint} from "react-to-print";
 import QRCode from "qrcode.react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faPrint, faBook, faCircleXmark} from '@fortawesome/free-solid-svg-icons';
+import MaterialesPathbook from "../Materiales/MaterialesPathbook";
 
 const ComponentToPrint = React.forwardRef(({fichaLectura, lectura, lecturaProperties}, ref) => {
     return (
         <div className="m-4 mb-10" ref={ref} id={lectura.lecturaId}
              style={{maxWidth: "90%", marginLeft: 'auto', marginRight: 'auto'}}>
+
             <div className="m-4" style={{width: '70px', height: '8px'}}/>
             <img src="/assets/logoplaneacion.png" alt="Logo"/>
             <div className="m-4">
@@ -328,9 +332,13 @@ const FichaPathbook = ({fichaLectura, lectura, lecturaProperties}) => {
                     </div>
                 </div>
             </div>
+
             <div className="bg-white-100  m-4 " style={{overflowY: 'auto', maxHeight: 'calc(100vh - 3rem)'}}>
                 <ComponentToPrint fichaLectura={fichaLectura} lectura={lectura} ref={componentRef} lecturaProperties={lecturaProperties}/>
+                <MaterialesPathbook pathbookId={lectura.lecturaId}/>
             </div>
+
+
         </div>
     );
 };
