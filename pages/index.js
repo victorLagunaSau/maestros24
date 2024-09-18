@@ -6,7 +6,6 @@ import Layout from "../components/Layout/Layout";
 import SeoHead from "../components/SeoHead";
 import HomeSecundaria from "../components/HomeSecundaria";
 import HomeBachillerato from "../components/HomeBachillerato";
-
 export default function Home() {
 	return (
 		<>
