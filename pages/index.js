@@ -6,6 +6,7 @@ import Layout from "../components/Layout/Layout";
 import SeoHead from "../components/SeoHead";
 import HomeSecundaria from "../components/HomeSecundaria";
 import HomeBachillerato from "../components/HomeBachillerato";
+import Videos from "../components/Videos/VideoTutoriales"
 export default function Home() {
 	return (
 		<>
@@ -17,6 +18,7 @@ export default function Home() {
 				<HomePrimariaA/>
 				<HomeSecundaria/>
 				<HomeBachillerato/>
+				<Videos/>
 			</Layout>
 		</>
 	);
