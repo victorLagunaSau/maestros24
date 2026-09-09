@@ -48,7 +48,7 @@ export default function Home() {
     const { readingPlans } = data;
 
     const meses = readingPlans
-        .filter(plan => plan.name.es.toLowerCase().includes("mes "))
+        .filter(plan => plan.name?.es?.toLowerCase().includes("mes "))
         .map((plan) => {
             const textBtn = plan.name.es.replace(/^mes\s+/i, '');
             return {
@@ -66,11 +66,7 @@ export default function Home() {
             };
         });
 
-    meses.sort((a, b) => {
-        if (a.textBtn < b.textBtn) return -1;
-        if (a.textBtn > b.textBtn) return 1;
-        return 0;
-    });
+    meses.sort((a, b) => a.textBtn.localeCompare(b.textBtn, undefined, { numeric: true }));
 
     return (
         <>

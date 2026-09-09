@@ -73,6 +73,13 @@ const HomeSoporteTecnico = () => {
                                                     linkTipo="whatsapp" size={23}/>
                                     </strong>
                                     <br/>
+                                    Teléfono (Guatemala):
+                                    <br/>
+                                    <strong className="text-4xl lg:text-4xl">
+                                        <LinkButton buttonName="+502 3028 0964" hrefUrl="tel:+50230280964"
+                                                    linkTipo="web" size={23}/>
+                                    </strong>
+                                    <br/>
                                 </div>
                             </motion.p>
                         </ScrollAnimationWrapper>
